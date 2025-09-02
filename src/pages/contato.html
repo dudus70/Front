@@ -1,11 +1,394 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoBags - Contato</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/contato.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-leaf me-2"></i>EcoBags
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="http://127.0.0.1:5500/src/pages/produtos.html"
+                >Produtos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="http://127.0.0.1:5500/src/pages/sobre.html"
+                >Sobre</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="http://127.0.0.1:5500/src/pages/contato.html"
+                >Contato</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge bg-success">3</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Início</a></li>
+            <li class="breadcrumb-item active">Contato</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="display-4 fw-bold mb-3">Entre em Contato</h1>
+            <p class="lead mb-4">
+              Tem dúvidas, sugestões ou precisa de ajuda? Estamos aqui para
+              ajudar você!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Informações de Contato -->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="contact-info-card">
+              <h3 class="mb-4">Informações de Contato</h3>
+
+              <div class="contact-item mb-4">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Endereço</h5>
+                  <p>
+                    Rua Sustentável, 123<br />Jardim Ecológico<br />São Paulo -
+                    SP, 01234-567
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item mb-4">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Telefone</h5>
+                  <p>(11) 99999-9999<br />(11) 98888-8888</p>
+                </div>
+              </div>
+
+              <div class="contact-item mb-4">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Email</h5>
+                  <p>contato@ecobags.com<br />vendas@ecobags.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-details">
+                  <h5>Horário de Atendimento</h5>
+                  <p>Segunda a Sexta: 8h às 18h<br />Sábado: 9h às 13h</p>
+                </div>
+              </div>
+
+              <div class="social-links mt-5">
+                <h5 class="mb-3">Siga-nos</h5>
+                <div class="d-flex gap-3">
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-pinterest-p"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário de Contato -->
+          <div class="col-lg-8">
+            <div class="contact-form-card">
+              <h3 class="mb-4">Envie sua Mensagem</h3>
+              <p class="text-muted mb-4">
+                Preencha o formulário abaixo e entraremos em contato o mais
+                breve possível.
+              </p>
+
+              <form id="contactForm">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="nome" class="form-label">Nome Completo *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nome"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email *</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="assunto" class="form-label">Assunto *</label>
+                  <select class="form-select" id="assunto" required>
+                    <option value="" selected disabled>
+                      Selecione um assunto
+                    </option>
+                    <option value="duvida">Dúvida sobre produtos</option>
+                    <option value="orcamento">Solicitação de orçamento</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="telefone" class="form-label">Telefone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="telefone"
+                    placeholder="(11) 99999-9999"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label">Mensagem *</label>
+                  <textarea
+                    class="form-control"
+                    id="mensagem"
+                    rows="5"
+                    required
+                    placeholder="Digite sua mensagem aqui..."
+                  ></textarea>
+                </div>
+
+                <div class="form-check mb-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="newsletter"
+                  />
+                  <label class="form-check-label" for="newsletter">
+                    Desejo receber novidades e promoções por email
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-submit">
+                  <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1977214127316!2d-46.65867582501904!3d-23.56134736179819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1690835974773!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h3>EcoBags</h3>
+            <p>
+              Fazendo a diferença um produto de cada vez, com soluções
+              sustentáveis para o seu dia a dia.
+            </p>
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h3>Links Rápidos</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"><i class="fas fa-arrow-right me-2"></i>Sobre nós</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-arrow-right me-2"></i>Nossos produtos</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-arrow-right me-2"></i>Política de
+                  sustentabilidade</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-arrow-right me-2"></i>Perguntas
+                  frequentes</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h3>Contato</h3>
+            <p>
+              <i class="fas fa-map-marker-alt me-2"></i> Rua Sustentável, 123
+            </p>
+            <p><i class="fas fa-phone me-2"></i> (11) 99999-9999</p>
+            <p><i class="fas fa-envelope me-2"></i> contato@ecobags.com</p>
+
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2023 EcoBags - Todos os direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script do formulário -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const contactForm = document.getElementById("contactForm");
+
+        contactForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Validação simples
+          const nome = document.getElementById("nome").value;
+          const email = document.getElementById("email").value;
+          const assunto = document.getElementById("assunto").value;
+          const mensagem = document.getElementById("mensagem").value;
+
+          if (nome && email && assunto && mensagem) {
+            // Simulação de envio
+            alert(
+              "Mensagem enviada com sucesso! Entraremos em contato em breve."
+            );
+            contactForm.reset();
+          } else {
+            alert("Por favor, preencha todos os campos obrigatórios.");
+          }
+        });
+
+        // Máscara de telefone
+        const telefoneInput = document.getElementById("telefone");
+        telefoneInput.addEventListener("input", function (e) {
+          let value = e.target.value.replace(/\D/g, "");
+          if (value.length > 11) value = value.slice(0, 11);
+
+          if (value.length > 0) {
+            value = value.replace(/^(\d{2})(\d)/g, "($1) $2");
+            if (value.length > 10) {
+              value = value.replace(/(\d{5})(\d)/, "$1-$2");
+            } else {
+              value = value.replace(/(\d{4})(\d)/, "$1-$2");
+            }
+          }
+
+          e.target.value = value;
+        });
+      });
+    </script>
+  </body>
 </html>
