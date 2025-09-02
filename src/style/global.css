@@ -6,9 +6,17 @@
   --dark: #1e2a1e;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--light);
+  color: #333333;
+  line-height: 1.6;
 }
 
 h1,
@@ -20,12 +28,15 @@ h5,
   font-family: "Montserrat", sans-serif;
 }
 
+/* Navbar */
 .navbar {
   background: linear-gradient(
     to right,
     var(--primary),
     var(--secondary)
   ) !important;
+  padding: 15px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
@@ -37,12 +48,116 @@ h5,
   color: var(--accent);
 }
 
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent) !important;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 5px;
+  left: 0;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Footer */
 footer {
   background-color: var(--dark);
+  color: white;
   padding: 50px 0 20px;
 }
 
+footer h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+footer h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--accent);
+}
+
+footer p,
+footer a {
+  color: #ccc;
+  margin-bottom: 10px;
+  display: block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--accent);
+  transform: translateX(5px);
+}
+
+footer i {
+  width: 25px;
+  color: var(--accent);
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
 .social-icons a {
-  font-size: 1.2rem;
+  display: inline-block;
   margin-right: 15px;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: var(--accent);
+  color: var(--dark);
+  transform: translateY(-5px);
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design para Header e Footer */
+@media (max-width: 768px) {
+  footer .row > div {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  footer h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
