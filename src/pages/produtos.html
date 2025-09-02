@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoBags - Categorias</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/categorias.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-leaf me-2"></i>EcoBags
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="http://127.0.0.1:5500/src/pages/produtos.html"
+                >Produtos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="http://127.0.0.1:5500/src/pages/sobre.html"
+                >Sobre</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge bg-success">3</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="breadcrumb-section">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Início</a></li>
+            <li class="breadcrumb-item active">Produtos</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="products-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-4">
+            <div class="filters-card">
+              <h4 class="filter-title">Filtros</h4>
+
+              <div class="filter-group">
+                <h5 class="filter-subtitle">Preço</h5>
+                <div class="price-range">
+                  <input
+                    type="range"
+                    class="form-range"
+                    min="0"
+                    max="500"
+                    step="10"
+                    id="priceRange"
+                  />
+                  <div class="d-flex justify-content-between">
+                    <span>R$ 0</span>
+                    <span>R$ 500</span>
+                  </div>
+                  <div class="selected-price mt-2">
+                    Valor selecionado: <span id="priceValue">R$ 250</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <h5 class="filter-subtitle">Tipo de Produto</h5>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="filter1"
+                    checked
+                  />
+                  <label class="form-check-label" for="filter1">Eco Bags</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="filter2"
+                  />
+                  <label class="form-check-label" for="filter2"
+                    >Bags de Algodão</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="filter3"
+                  />
+                  <label class="form-check-label" for="filter3"
+                    >Bags Recicladas</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="filter4"
+                  />
+                  <label class="form-check-label" for="filter4"
+                    >Bags Personalizadas</label
+                  >
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <h5 class="filter-subtitle">Marca</h5>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="brand1"
+                    checked
+                  />
+                  <label class="form-check-label" for="brand1">EcoBags</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="brand2" />
+                  <label class="form-check-label" for="brand2">Natureza</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="brand3" />
+                  <label class="form-check-label" for="brand3">EcoLife</label>
+                </div>
+              </div>
+
+              <button class="btn btn-apply-filters mt-3">
+                Aplicar Filtros
+              </button>
+              <button class="btn btn-clear-filters mt-2">Limpar Filtros</button>
+            </div>
+          </div>
+
+          <div class="col-lg-9">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h2 class="section-title">Nossos Produtos</h2>
+              <div class="sort-select">
+                <select class="form-select">
+                  <option selected>Ordenar por: Recomendados</option>
+                  <option>Preço: Menor para Maior</option>
+                  <option>Preço: Maior para Menor</option>
+                  <option>Mais Recentes</option>
+                  <option>Melhor Avaliados</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="../assets/ecoBag1.png"
+                      alt="Eco Bag Clássica"
+                      class="img-fluid"
+                    />
+                    <div class="product-overlay">
+                      <button class="btn btn-view">Visualizar</button>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h5 class="product-title">Eco Bag Clássica</h5>
+                    <p class="product-desc">
+                      Bolsa ecológica resistente e durável
+                    </p>
+                    <div class="product-price">R$ 29,90</div>
+                    <button class="btn btn-add-cart">
+                      <i class="fas fa-shopping-cart me-2"></i>Adicionar ao
+                      Carrinho
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="../assets/ecoBag2.png"
+                      alt="Eco Bag Natural"
+                      class="img-fluid"
+                    />
+                    <div class="product-overlay">
+                      <button class="btn btn-view">Visualizar</button>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h5 class="product-title">Eco Bag Natural</h5>
+                    <p class="product-desc">Material 100% biodegradável</p>
+                    <div class="product-price">R$ 34,90</div>
+                    <button class="btn btn-add-cart">
+                      <i class="fas fa-shopping-cart me-2"></i>Adicionar ao
+                      Carrinho
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="../assets/ecoBag3.png"
+                      alt="Eco Bag Premium"
+                      class="img-fluid"
+                    />
+                    <div class="product-overlay">
+                      <button class="btn btn-view">Visualizar</button>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h5 class="product-title">Eco Bag Premium</h5>
+                    <p class="product-desc">
+                      Design exclusivo e material premium
+                    </p>
+                    <div class="product-price">R$ 49,90</div>
+                    <button class="btn btn-add-cart">
+                      <i class="fas fa-shopping-cart me-2"></i>Adicionar ao
+                      Carrinho
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="../assets/ecoBag4.png"
+                      alt="Mini Eco Bag"
+                      class="img-fluid"
+                    />
+                    <div class="product-overlay">
+                      <button class="btn btn-view">Visualizar</button>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h5 class="product-title">Mini Eco Bag</h5>
+                    <p class="product-desc">Perfecta para o dia a dia</p>
+                    <div class="product-price">R$ 24,90</div>
+                    <button class="btn btn-add-cart">
+                      <i class="fas fa-shopping-cart me-2"></i>Adicionar ao
+                      Carrinho
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="../assets/ecoBag5.png"
+                      alt="Eco Bag Sport"
+                      class="img-fluid"
+                    />
+                    <div class="product-overlay">
+                      <button class="btn btn-view">Visualizar</button>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h5 class="product-title">Eco Bag Sport</h5>
+                    <p class="product-desc">
+                      Ideal para atividades ao ar livre
+                    </p>
+                    <div class="product-price">R$ 39,90</div>
+                    <button class="btn btn-add-cart">
+                      <i class="fas fa-shopping-cart me-2"></i>Adicionar ao
+                      Carrinho
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="product-card">
+                  <div class="product-image">
+                    <img
+                      src="../assets/ecoBag6.png"
+                      alt="Eco Bag Elegance"
+                      class="img-fluid"
+                    />
+                    <div class="product-overlay">
+                      <button class="btn btn-view">Visualizar</button>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h5 class="product-title">Eco Bag Elegance</h5>
+                    <p class="product-desc">Estilo e sustentabilidade</p>
+                    <div class="product-price">R$ 54,90</div>
+                    <button class="btn btn-add-cart">
+                      <i class="fas fa-shopping-cart me-2"></i>Adicionar ao
+                      Carrinho
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <nav aria-label="Page navigation" class="mt-5">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#">Anterior</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Próxima</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h3>EcoBags</h3>
+            <p>
+              Fazendo a diferença um produto de cada vez, com soluções
+              sustentáveis para o seu dia a dia.
+            </p>
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h3>Links Rápidos</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"><i class="fas fa-arrow-right me-2"></i>Sobre nós</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-arrow-right me-2"></i>Nossos produtos</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-arrow-right me-2"></i>Política de
+                  sustentabilidade</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-arrow-right me-2"></i>Perguntas
+                  frequentes</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h3>Contato</h3>
+            <p>
+              <i class="fas fa-map-marker-alt me-2"></i> Rua Sustentável, 123
+            </p>
+            <p><i class="fas fa-phone me-2"></i> (11) 99999-9999</p>
+            <p><i class="fas fa-envelope me-2"></i> contato@ecobags.com</p>
+
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2023 EcoBags - Todos os direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const priceRange = document.getElementById("priceRange");
+        const priceValue = document.getElementById("priceValue");
+
+        priceRange.addEventListener("input", function () {
+          priceValue.textContent = `R$ ${this.value}`;
+        });
+      });
+    </script>
+  </body>
+</html>

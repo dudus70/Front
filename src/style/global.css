@@ -28,7 +28,6 @@ h5,
   font-family: "Montserrat", sans-serif;
 }
 
-/* Navbar */
 .navbar {
   background: linear-gradient(
     to right,
@@ -74,7 +73,6 @@ h5,
   width: 100%;
 }
 
-/* Footer */
 footer {
   background-color: var(--dark);
   color: white;
@@ -149,7 +147,6 @@ footer i {
   font-size: 0.9rem;
 }
 
-/* Responsive Design para Header e Footer */
 @media (max-width: 768px) {
   footer .row > div {
     margin-bottom: 40px;
