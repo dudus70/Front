@@ -1,0 +1,48 @@
+:root {
+  --primary: #2c5530;
+  --secondary: #4a7c59;
+  --accent: #8fb996;
+  --light: #f8f9f8;
+  --dark: #1e2a1e;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(
+    to right,
+    var(--primary),
+    var(--secondary)
+  ) !important;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.navbar-brand i {
+  color: var(--accent);
+}
+
+footer {
+  background-color: var(--dark);
+  padding: 50px 0 20px;
+}
+
+.social-icons a {
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
