@@ -26,7 +26,6 @@
   color: var(--secondary);
 }
 
-/* Hero Section */
 .contact-hero {
   background: linear-gradient(rgba(44, 85, 48, 0.9), rgba(44, 85, 48, 0.9)),
     url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%234a7c59" width="100" height="100"/><path fill="%232c5530" d="M0 0L100 100" stroke-width="0"/></svg>');
@@ -47,7 +46,6 @@
   opacity: 0.9;
 }
 
-/* Contact Section */
 .contact-section {
   background-color: var(--light);
 }
@@ -70,7 +68,6 @@
   border-bottom: 2px solid var(--accent);
 }
 
-/* Contact Items */
 .contact-item {
   display: flex;
   align-items: flex-start;
@@ -105,7 +102,6 @@
   line-height: 1.5;
 }
 
-/* Social Links */
 .social-links h5 {
   color: var(--primary);
   font-weight: 600;
@@ -169,7 +165,6 @@
   font-size: 0.9rem;
 }
 
-/* Submit Button */
 .btn-submit {
   background-color: var(--primary);
   color: white;
@@ -187,22 +182,6 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Map Section */
-.map-section {
-  padding: 0;
-}
-
-.map-container {
-  width: 100%;
-  border-top: 3px solid var(--accent);
-}
-
-.map-container iframe {
-  display: block;
-  filter: grayscale(20%);
-}
-
-/* Responsividade */
 @media (max-width: 992px) {
   .contact-info-card,
   .contact-form-card {

@@ -20,10 +20,9 @@
     <link rel="stylesheet" href="../style/contato.css" />
   </head>
   <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="http://127.0.0.1:5500/Front/index.html">
+        <a class="navbar-brand" href="http://127.0.0.1:5500/index.html">
           <i class="fas fa-leaf me-2"></i>EcoBags
         </a>
         <button
@@ -39,40 +38,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="./produtos.html"
-                >Produtos</a
-              >
+              <a class="nav-link" href="./produtos.html">Produtos</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="./sobre.html"
-                >Sobre</a
-              >
+              <a class="nav-link" href="./sobre.html">Sobre</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="./contato.html"
-                >Contato</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="badge bg-success">3</span>
-              </a>
+              <a class="nav-link active" href="./contato.html">Contato</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Breadcrumb -->
     <section class="breadcrumb-section">
       <div class="container">
         <nav aria-label="breadcrumb">
@@ -84,7 +63,6 @@
       </div>
     </section>
 
-    <!-- Hero Section -->
     <section class="contact-hero">
       <div class="container">
         <div class="row">
@@ -99,11 +77,9 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact-section py-5">
       <div class="container">
         <div class="row">
-          <!-- Informações de Contato -->
           <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="contact-info-card">
               <h3 class="mb-4">Informações de Contato</h3>
@@ -171,12 +147,11 @@
             </div>
           </div>
 
-          <!-- Formulário de Contato -->
           <div class="col-lg-8">
             <div class="contact-form-card">
               <h3 class="mb-4">Envie sua Mensagem</h3>
               <p class="text-muted mb-4">
-                Preencha o formulário abaixo e entraremos em contato o mais
+                Preencha o formulário abaixo и entraremos em contato o mais
                 breve possível.
               </p>
 
@@ -258,29 +233,6 @@
       </div>
     </section>
 
-    <!-- Map Section -->
-    <section class="map-section">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="map-container">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1977214127316!2d-46.65867582501904!3d-23.56134736179819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1690835974773!5m2!1spt-BR!2sbr"
-                width="100%"
-                height="400"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              >
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row">
@@ -336,15 +288,13 @@
         </div>
 
         <div class="copyright">
-          <p>&copy; 2023 EcoBags - Todos os direitos reservados</p>
+          <p>&copy; 2025 EcoBags - Todos os direitos reservados</p>
         </div>
       </div>
     </footer>
 
-    <!-- Bootstrap 5.3 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Script do formulário -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const contactForm = document.getElementById("contactForm");
@@ -352,14 +302,12 @@
         contactForm.addEventListener("submit", function (e) {
           e.preventDefault();
 
-          // Validação simples
           const nome = document.getElementById("nome").value;
           const email = document.getElementById("email").value;
           const assunto = document.getElementById("assunto").value;
           const mensagem = document.getElementById("mensagem").value;
 
           if (nome && email && assunto && mensagem) {
-            // Simulação de envio
             alert(
               "Mensagem enviada com sucesso! Entraremos em contato em breve."
             );
@@ -369,7 +317,6 @@
           }
         });
 
-        // Máscara de telefone
         const telefoneInput = document.getElementById("telefone");
         telefoneInput.addEventListener("input", function (e) {
           let value = e.target.value.replace(/\D/g, "");

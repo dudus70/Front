@@ -8,7 +8,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* NAV BAR */
 nav {
   width: 100%;
   background: #222;
@@ -18,7 +17,6 @@ nav {
   font-size: 1.2rem;
 }
 
-/* CARROSSEL */
 .carousel {
   position: relative;
   width: 100%;
@@ -33,21 +31,27 @@ nav {
 
 .slides img {
   width: 50%;
-  height: 30vh; /* altura do carrossel */
-  object-fit: cover; /* cobre sem distorcer */
+  height: 30vh;
+  object-fit: cover;
 }
 
 input[type="radio"] {
   display: none;
 }
 
-/* Movimentação */
-#slide1:checked ~ .slides { transform: translateX(0); }
-#slide2:checked ~ .slides { transform: translateX(-100%); }
-#slide3:checked ~ .slides { transform: translateX(-200%); }
-#slide4:checked ~ .slides { transform: translateX(-300%); }
+#slide1:checked ~ .slides {
+  transform: translateX(0);
+}
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+#slide4:checked ~ .slides {
+  transform: translateX(-300%);
+}
 
-/* Navegação (bolinhas) */
 .navigation {
   position: absolute;
   bottom: 20px;
@@ -61,7 +65,7 @@ input[type="radio"] {
   width: 15px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   transition: 0.3s;
 }
@@ -70,7 +74,6 @@ input[type="radio"] {
   background: white;
 }
 
-/* Quando marcado */
 #slide1:checked ~ .navigation label[for="slide1"],
 #slide2:checked ~ .navigation label[for="slide2"],
 #slide3:checked ~ .navigation label[for="slide3"],
@@ -79,12 +82,12 @@ input[type="radio"] {
 }
 
 .carousel-item img {
-  height: 50vh; /* altura das imagens */
-  object-fit: cover; /* ajusta sem distorcer */
+  height: 50vh;
+  object-fit: cover;
 }
 
 .carousel-caption {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
 }
@@ -98,9 +101,6 @@ input[type="radio"] {
   font-size: 1.2rem;
 }
 
-
-
-/* Cards de produtos personalizados */
 .produto-card {
   border-radius: 15px;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -108,17 +108,15 @@ input[type="radio"] {
 
 .produto-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Preço destacado */
 .preco {
   color: #28a745;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-/* Botão de compra personalizado */
 .btn-comprar {
   background-color: #ff6600;
   color: white;
